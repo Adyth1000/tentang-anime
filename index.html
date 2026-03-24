@@ -46,7 +46,7 @@
             margin-bottom: 10px;
         }
         h1 {
-  color: #a80000;
+  color: #9901000;
   text-transform: uppercase;
   margin-bottom: 30px;
   font-weight: 900;
@@ -56,22 +56,27 @@
   -webkit-text-stroke: 1px #ffffff;
         }
         .btn {
-            display: block;
-            background-color: #a00000;
-            color: white !important;
-            text-decoration: none;
-            padding: 16px;
-            margin: 12px 0;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 16px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background-color: #cc0000;
-            transform: translateY(-2px);
-        }
+  display: block;
+  background-color: #990100; /* GANTI KE MERAH TUA JUGAPILIHAN KAMU */
+  color: white !important;
+  text-decoration: none;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  
+  /* INI RAHASIA ANIMASI HALUS NYA */
+  transition: all 0.3s ease-in-out; 
+}
+
+.btn:hover {
+  background-color: #ff0000; /* Kalau disentuh, warnanya jadi merah terang */
+  color: #ffffff;
+  box-shadow: 0 8px 12px rgba(255, 0, 0, 0.4); /* Bayangan jadi merah & besar */
+  transform: translateY(-4px) scale(1.03); /* Loncat ke atas dikit & membesar */
+}
     </style>
 </head>
 <body>
