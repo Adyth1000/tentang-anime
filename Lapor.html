@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Anime</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 20px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        /* Efek Background Karakter (Ganti URL dengan link Conan kamu) */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url('https://i.ibb.co.com/21F5xnKN/20260324-062449.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.30; /* Atur kepekatan gambar latar */
+            z-index: 0;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .logo { 
+            width: 140px; 
+            margin-bottom: 10px;
+        }
+        h1 {
+  color: #990100;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 1px #ffffff;
+        }
+      .tiktok-text {
+  font-family: Arial, sans-serif;
+  font-size: 24px; /* Biar kecil tapi kebaca */
+  color: #ffffff; /* Warna putih biar kontras sama background */
+  text-align: center;
+  margin-top: -20px; /* Tarik ke atas biar mepet sama judul */
+  margin-bottom: 25px; /* Jarak ke tombol di bawahnya */
+  font-style: italic; /* Biar rada estetik */
+        }
+        .btn {
+  display: block;
+  background-color: #990100; /* GANTI KE MERAH TUA JUGAPILIHAN KAMU */
+  color: white !important;
+  text-decoration: none;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  
+  /* INI RAHASIA ANIMASI HALUS NYA */
+  transition: all 0.3s ease-in-out; 
+}
+
+.btn:hover {
+  background-color: #ff0000; /* Kalau disentuh, warnanya jadi merah terang */
+  color: #ffffff;
+  box-shadow: 0 8px 12px rgba(255, 0, 0, 0.4); /* Bayangan jadi merah & besar */
+  transform: translateY(-4px) scale(1.03); /* Loncat ke atas dikit & membesar */
+}
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="content">
+            <img src="https://i.ibb.co.com/fdzr5wrL/20260324-062628.png" alt="Logo" class="logo">
+            
+            <h1>Tentang Anime</h1>
+              <p class="tiktok-text">silahkan DM/komentar di tiktok yaa ges</p>
+
+            <a href="https://www.tiktok.com/@tentanganime00?_r=1&_t=ZS-94x1bLwobkW" target="_blank" rel="noopener noreferrer" class="btn">Tiktok Tentang Anime</a>
+        </div>
+    </div>
+
+</body>
+</html>
